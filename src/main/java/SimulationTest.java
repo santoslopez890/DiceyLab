@@ -4,14 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SimulationTest {
 
-    @org.junit.jupiter.api.Test
-    void runSimulation() {
-        Simulation sim = new Simulation(3, 10);
-
-        sim.runSimulation();
-    }
     @Test
-    void runSimulationDiceRoll() {
-        DiceRoll.runSimulation();
+    void runSimulation() {
+        Simulation.getSimulationperams(2,1000000);
+
+        Simulation.runSimulation();
+        Simulation.printResults();
     }
+
+
 }

@@ -1,10 +1,13 @@
+import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
+
 public class DiceRoll {
     private static int tosses;
 
+    public static final ArrayList<Integer> rollResultsDice=new ArrayList<>();
 
-    public DiceRoll(int numberOfTosses) {
+
+    public static void GetDiceRoll(int numberOfTosses) {
         DiceRoll.tosses=numberOfTosses;
 
     }
@@ -17,7 +20,8 @@ public class DiceRoll {
         Random rd = new Random();
 
         int diceRoll;
-        int sumOfRoll = 0;
+        int sumOfRoll=0;
+
         int max=6;
         int min=1;
 
@@ -25,14 +29,15 @@ public class DiceRoll {
                 diceRoll= rd.nextInt(max - min + 1) + min;
                 sumOfRoll += diceRoll;
             }
+            rollResultsDice.add(sumOfRoll);
             System.out.println("sum roll is "+sumOfRoll);
 
-
-
     }
-    // public static void printResults(){
-    //  return null;
-    //}
+    public static ArrayList<Integer> results()
+        {
+        return rollResultsDice;
+    }
+
 
 
 

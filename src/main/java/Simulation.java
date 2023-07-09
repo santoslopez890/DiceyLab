@@ -11,7 +11,7 @@ public class Simulation {
 
     private static final ArrayList<Integer> rollResults=new ArrayList<>();
 
-    public Simulation(int numberOfDies, int numberOfTosses) {
+    public static void getSimulationperams(int numberOfDies, int numberOfTosses) {
         Simulation.numberOfTosses = numberOfTosses;
         Simulation.numberOfDies =numberOfDies;
     }
@@ -64,16 +64,16 @@ public class Simulation {
            if(i==12){twelves++;}
        }
        System.out.println("2  :    "+twos+": "+(twos/numberOfTosses)+" **\n"+
-               "3  :    "+threes+": "+(threes/numberOfTosses)+ "**\n"+
-               "4  :    "+fours+": "+(fours/numberOfTosses)+" ***\n"+
-               "5  :    "+fives+": "+(fives/numberOfTosses)+" ****\n"+
-               "6  :    "+sixes+": "+(sixes/numberOfTosses)+" *****\n"+
-               "7  :    "+sevens+": "+(sevens/numberOfTosses)+" ******\n"+
-               "8  :    "+eights+": "+(eights/numberOfTosses)+" *******\n"+
-               "9  :    "+nines+": "+(nines/numberOfTosses)+" ********\n"+
-               "10 :    "+tens+": "+(tens/numberOfTosses)+" ********\n"+
-               "11 :    "+elevens+": "+(elevens/numberOfTosses)+" *********\n"+
-               "12 :    "+twelves+": "+(twelves/numberOfTosses)+" **********\n"
+               "3  :    "+threes+": "+(threes/numberOfTosses)+ "***\n"+
+               "4  :    "+fours+": "+(fours/numberOfTosses)+" ****\n"+
+               "5  :    "+fives+": "+(fives/numberOfTosses)+" *****\n"+
+               "6  :    "+sixes+": "+(sixes/numberOfTosses)+" ******\n"+
+               "7  :    "+sevens+": "+(sevens/numberOfTosses)+" *******\n"+
+               "8  :    "+eights+": "+(eights/numberOfTosses)+" ********\n"+
+               "9  :    "+nines+": "+(nines/numberOfTosses)+" *********\n"+
+               "10 :    "+tens+": "+(tens/numberOfTosses)+" **********\n"+
+               "11 :    "+elevens+": "+(elevens/numberOfTosses)+" ************\n"+
+               "12 :    "+twelves+": "+(twelves/numberOfTosses)+" ************\n"
 
        );
 
